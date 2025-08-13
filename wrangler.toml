@@ -1,0 +1,9 @@
+name = "atensailabd"
+compatibility_date = "2025-08-13"
+
+[env.production.pages]
+compatibility_date = "2025-08-13"
+
+# Static site configuration for Cloudflare Pages
+[[env.production.pages.assets]]
+directory = "./dist"
