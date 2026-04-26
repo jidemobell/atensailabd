@@ -7,13 +7,9 @@ export default function Header({ scrolled }) {
     <header className={`site-header ${scrolled ? 'is-scrolled' : ''}`}>
       <div className="container header-inner">
         <a href="#top" className="brand" aria-label={site.brandFull}>
-          <span className="brand-mark" aria-hidden="true">
-            <span>A</span>
-          </span>
-          <span className="brand-text">
-            <strong>{site.brand}</strong>
-            <em>Labs</em>
-          </span>
+          <img src="/brand/mark-dark.png" alt="" className="brand-mark-img" aria-hidden="true" />
+          <img src="/brand/wordmark-dark.png" alt={site.brand} className="brand-wordmark" />
+          <em className="brand-tag">Labs</em>
         </a>
 
         <nav className={`nav ${open ? 'is-open' : ''}`} onClick={() => setOpen(false)}>

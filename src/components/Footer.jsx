@@ -6,11 +6,9 @@ export default function Footer() {
       <div className="container footer-inner">
         <div className="footer-brand">
           <a href="#top" className="brand brand--footer">
-            <span className="brand-mark" aria-hidden="true"><span>A</span></span>
-            <span className="brand-text">
-              <strong>{site.brand}</strong>
-              <em>Labs</em>
-            </span>
+            <img src="/brand/mark-light.png" alt="" className="brand-mark-img" aria-hidden="true" />
+            <img src="/brand/wordmark-light.png" alt={site.brand} className="brand-wordmark" />
+            <em className="brand-tag">Labs</em>
           </a>
           <p className="footer-tag">{site.tagline}</p>
           <p className="footer-loc">{site.location}</p>
